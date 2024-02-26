@@ -1,0 +1,192 @@
+{
+  "systemEnv": {
+    "openapiPrefix": "fastgpt",
+    "vectorMaxProcess": 15,
+    "qaMaxProcess": 15,
+    "pgHNSWEfSearch": 100
+  },
+  "chatModels": [
+    {
+      "model": "hengnao",
+      "name": "hengnao",
+      "maxContext": 16000,
+      "maxResponse": 16000,
+      "quoteMaxToken": 13000,
+      "maxTemperature": 1.2,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": false,
+      "toolChoice": false,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {}
+    },
+    {
+      "model": "Qwen-7B",
+      "name": "Qwen-7B",
+      "maxContext": 8000,
+      "maxResponse": 2000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 6000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    }
+  ],
+  "qaModels": [
+    {
+      "model": "hengnao",
+      "name": "hengnao",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    },
+    {
+      "model": "Qwen-7B",
+      "name": "Qwen-7B",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": true,
+      "defaultSystemChatPrompt": ""
+    }
+  ],
+  "cqModels": [    
+    {
+      "model": "hengnao",
+      "name": "hengnao",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+  },
+    {
+      "model": "Qwen-7B",
+      "name": "Qwen-7B",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    }
+  ],
+  "extractModels": [
+    {
+      "model": "hengnao",
+      "name": "hengnao",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    },
+    {
+      "model": "Qwen-7B",
+      "name": "Qwen-7B",
+      "maxContext": 8000,
+      "maxResponse": 2000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 6000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    }
+  ],
+  "qgModels": [
+    {
+      "model": "hengnao",
+      "name": "hengnao",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    },
+    {
+      "model": "Qwen-7B",
+      "name": "Qwen-7B",
+      "maxContext": 8000,
+      "maxResponse": 4000,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "quoteMaxToken": 2000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "vision": false,
+      "defaultSystemChatPrompt": ""
+    }
+  ],
+  "vectorModels": [
+    {
+      "model": "m3e",
+      "name": "M3E",
+      "price": 0.1,
+      "defaultToken": 500,
+      "maxToken": 4800
+    }
+  ],
+  "reRankModels": [        {
+    "model": "bge-reranker-base", 
+    "name": "检索重排-base", 
+    "inputPrice": 0,
+    "requestUrl": "http://10.20.152.76:6006/api/v1/rerank",
+    "requestAuth": "mytoken"
+}],
+  "audioSpeechModels": [
+    {
+      "model": "tts-1",
+      "name": "OpenAI TTS1",
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "voices": [
+        { "label": "Alloy", "value": "alloy", "bufferId": "openai-Alloy" },
+        { "label": "Echo", "value": "echo", "bufferId": "openai-Echo" },
+        { "label": "Fable", "value": "fable", "bufferId": "openai-Fable" },
+        { "label": "Onyx", "value": "onyx", "bufferId": "openai-Onyx" },
+        { "label": "Nova", "value": "nova", "bufferId": "openai-Nova" },
+        { "label": "Shimmer", "value": "shimmer", "bufferId": "openai-Shimmer" }
+      ]
+    }
+  ],
+  "whisperModel": {
+    "model": "whisper-1",
+    "name": "Whisper1",
+    "inputPrice": 0,
+    "outputPrice": 0
+  }
+}
